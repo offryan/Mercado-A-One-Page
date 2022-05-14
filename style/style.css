@@ -1,52 +1,42 @@
-*{
-    box-sizing: border-box;
-}
-
 html{
     font-family: Verdana;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 body{
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 #menu{
-    width: 100%;
-    height: 120px;
+    height: 100px;
     background: linear-gradient(#f7ff,#fff);
     border: 1px solid rgb(149, 59, 194);
     box-shadow: 2px 2px 6px;
     text-shadow: 2px 1.5px 5px #000;
 }
 
-#menu img{
-    width: 100px;
-}
-
 #logo, p{
     color: rgb(68, 87, 138);
     width: 100%;
-    font-size: 40px;
+    font-size: 32px;
     display: flex;
-    margin: 18px;
+    margin: 5px;
+    height: 80px;
 }
 
-
 .ofertas img{
-    width: 80%;
-    height: 150px;
+    height: 100px;   
 }
 
 h2{
     color: blue;
-}
-
-.container{
-    display: flex;
-    flex-direction: column ;
 }
 
 figure{
@@ -68,13 +58,11 @@ figcaption, h2{
 }
 
 footer{
-    margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     background: linear-gradient(#fff,#f7ff);
     border: 1px solid rgb(149, 59, 194);    
     box-shadow: 1px 2px 8px;
     text-align: center;
+    width: 100%;
 }
 
 hr{
@@ -86,30 +74,39 @@ hr{
     font-size: 15px;
 }
 
-.container, .ofertas, #ofd, h1{
-    margin: 2px;
-    padding: 2px
-}
-
-.bebidas img{
-    width: 100%px;
-    height: 150px;
-}
-
 .ofertas, #ofd, h1{
     margin: 2px;
     padding: 2px
 }
 
-.arrow{
-    width: 30px;
+#nav2, #bebidas, #limpeza, #frutas{ 
+    background-color: rgb(246, 252, 252);
+    height: 100%;
 }
 
-.bars{
-    width: 30px;
+.ofertas h1{
+    text-align: left;
+    padding: 10px;
 }
 
 .container{
-    transform: translate(130px,10px);
+    text-align: center;
 }
 
+.bebidas div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.limpeza div{
+    display: flex;    
+}
+
+#frutas{
+    display: flex;
+    text-align: center;
+}
+
+#bebidas{
+    display: flex;
+}
