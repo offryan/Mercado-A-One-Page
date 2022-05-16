@@ -12,7 +12,8 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />  
+    />
+  
   </head>
 
   <body>
@@ -51,26 +52,10 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <!-- Swiper JS -->
+    <!-- Swiper JS não troca o link se não explode -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <script src="./script2.js"></script>
+    
   </body>
 </html>

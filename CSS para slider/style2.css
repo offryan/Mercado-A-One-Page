@@ -13,17 +13,19 @@ body {
   padding: 0;
 }
 
+/*Altera o tamanho do bloco de trás*/
 .swiper {
   width: 70%;
   height: 30%;
 }
 
+/*Altera o tamanho da fonte*/
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
 
-  /* Center slide text vertically */
+  /* Texto vertical do slider caso necessário */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -38,6 +40,7 @@ body {
   align-items: center;
 }
 
+/*Altera o tamanho da imagem dentro do slider*/
 .swiper-slide img {
   display: block;
   width: 50%;
