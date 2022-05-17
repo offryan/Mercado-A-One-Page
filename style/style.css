@@ -20,11 +20,16 @@ body{
     border: 10px solid rgb(255, 255, 255);  
 }
 
+#esp{
+    height: 10px;
+    background-color: white;
+}
+
 #menu2{
     width: 100%;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 6px;
-    text-shadow: 2px 1px 7px rgb(6, 5, 15);
+    text-shadow: 2px 1px 7px rgb(0, 0, 0);
     position: fixed;
 }
 
@@ -76,21 +81,37 @@ figure figcaption{
 }
 
 figcaption, h2{
-    color: rgb(16, 12, 12);
+    color: rgb(0, 0, 0);
 }
 
 footer{
-    border: 1px solid rgb(7, 4, 8);    
     box-shadow: 1px 5px 8px;
     width: 100%;
     display: inline-block;
-    margin-top: 109px;
     max-width: 100%;
+    min-height: 250px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+footer .boxes{
+    width: 320px;
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #boxes:nth-child(3){
+width: 900px;
 }
 
 hr{
     width: 190px;
     color: black;
+}
+
+footer h2{
+    color: #000000;
 }
 
 #ofd{
@@ -130,6 +151,7 @@ hr{
 
 #frutas{
     display: flex;
+    text-align: center;
     
 }
 
@@ -160,7 +182,6 @@ hr{
 
 .formulario{
     width: 200px;
-    padding: 30px;
 }
 
 .formulario p{
@@ -277,11 +298,13 @@ a{
 }
 
 li a{
-    border: 1px solid black;
     border-radius: 25px;
     padding: 2px;
-    background-color: rgb(8, 8, 15);
-    color: white;
+   
+}
+
+footer li{
+    list-style: none;
 }
 
 #menu {
@@ -296,6 +319,8 @@ li a{
     text-align: center;
     margin-right: 10px;
     font-size: 15px;
+     background-color: rgb(8, 8, 15);
+    color: white;
   }
   
   #btn-mobile {
@@ -528,10 +553,6 @@ li a{
                   visibility: hidden;
               }
             }
-
-
-
-
 /* 
 Spinosa: 
 
