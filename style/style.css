@@ -4,31 +4,44 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 body{
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+#tst{
+    height: 100px;
 }
 
 #menu{
-    height: 100px;
-    background: linear-gradient(#f7ff,#fff);
-    border: 1px solid rgb(149, 59, 194);
+    width: 100%;
+    background-color: white;
     box-shadow: 2px 2px 6px;
-    text-shadow: 2px 1.5px 5px #000;
+    text-shadow: 2px 1px 7px rgb(6, 5, 15);
+    position: fixed;
+
 }
 
 #logo, p{
-    color: rgb(68, 87, 138);
+    color: rgb(10, 11, 20);
     width: 100%;
-    font-size: 32px;
+    font-size: 40px;
     display: flex;
-    margin: 5px;
-    height: 80px;
+    margin: 13px;
+}
+
+button{
+    margin-right: 80px;
+    padding-top: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px black;
+    align-items: center;
 }
 
 .ofertas img{
@@ -54,15 +67,15 @@ figure figcaption{
 }
 
 figcaption, h2{
-    color: red;
+    color: rgb(16, 12, 12);
 }
 
 footer{
-    background: linear-gradient(#fff,#f7ff);
-    border: 1px solid rgb(149, 59, 194);    
+    border: 1px solid rgb(7, 4, 8);    
     box-shadow: 1px 2px 8px;
-    text-align: center;
     width: 100%;
+    display: inline-block;
+    margin-top: 109px;
 }
 
 hr{
@@ -80,8 +93,9 @@ hr{
 }
 
 #nav2, #bebidas, #limpeza, #frutas{ 
-    background-color: rgb(246, 252, 252);
+    background-color: rgb(255, 255, 255);
     height: 100%;
+    text-align: center;
 }
 
 .ofertas h1{
@@ -89,25 +103,102 @@ hr{
     padding: 10px;
 }
 
-.container{
-    text-align: center;
-}
-
 .bebidas div{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .limpeza div{
     display: flex;    
+    
 }
 
 #frutas{
     display: flex;
     text-align: center;
+    
 }
 
 #bebidas{
     display: flex;
 }
 
+.nome, .email{
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.assunto, .msg{
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: -12px;
+}
+
+#btt{
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 12px;
+}
+
+.formulario{
+    width: 200px;
+    padding: 30px;
+}
+
+.formulario p{
+    font-size: 1.5em;
+}
+
+.field{
+    margin: 15px 0;
+}
+
+.field label, .field span{
+    padding-left: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+.radiobox label{
+    display: inline-block;
+}
+
+input[type=text],input[type=email],textarea{
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input#nao{
+    margin-left: 30px;
+}
+
+textarea{
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+}
+
+input[type=submit]{
+    display: block;
+    background-color: #ccc;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
