@@ -4,10 +4,12 @@ html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
 body{
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -15,23 +17,24 @@ body{
 
 #tst{
     height: 100px;
+    border: 10px solid rgb(255, 255, 255);  
 }
 
-#menu{
+#menu2{
     width: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 6px;
     text-shadow: 2px 1px 7px rgb(6, 5, 15);
     position: fixed;
-
 }
 
 #logo, p{
-    color: rgb(10, 11, 20);
+    color: rgb(6, 6, 9);
     width: 100%;
-    font-size: 40px;
+    font-size: 30px;
     display: flex;
-    margin: 13px;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 button{
@@ -40,7 +43,7 @@ button{
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 2px 2px 6px rgb(0, 0, 0);
     align-items: center;
 }
 
@@ -49,17 +52,23 @@ button{
 }
 
 h2{
-    color: blue;
+    color: rgb(4, 4, 10);
 }
 
 figure{
-    border: 1.5px solid black;
+    border: 1.5px solid rgb(11, 5, 5);
     border-radius: 10px;
     width: 200px;
     box-shadow: 1px 2px 3px;
     text-align: center;
     display: inline-block;
     margin: 10px;
+    block-size: 300px;
+    vertical-align: middle;
+}
+
+img{
+    max-width: 200px;
 }
 
 figure figcaption{
@@ -72,10 +81,11 @@ figcaption, h2{
 
 footer{
     border: 1px solid rgb(7, 4, 8);    
-    box-shadow: 1px 2px 8px;
+    box-shadow: 1px 5px 8px;
     width: 100%;
     display: inline-block;
     margin-top: 109px;
+    max-width: 100%;
 }
 
 hr{
@@ -92,7 +102,7 @@ hr{
     padding: 2px
 }
 
-#nav2, #bebidas, #limpeza, #frutas{ 
+#nav2, #bebidas, #limpeza, #frutas #peixes{ 
     background-color: rgb(255, 255, 255);
     height: 100%;
     text-align: center;
@@ -103,24 +113,30 @@ hr{
     padding: 10px;
 }
 
+
 .bebidas div{
     display: flex;
+    
 }
 
 .limpeza div{
-    display: flex;    
+    display: flex;  
     
+}
+
+#peixes{
+    display: flex;
 }
 
 #frutas{
     display: flex;
-    text-align: center;
     
 }
 
 #bebidas{
     display: flex;
 }
+
 
 .nome, .email{
     margin: 5px;
@@ -192,13 +208,332 @@ input[type=submit]{
     border: none;
     outline: 0;
     cursor: pointer;
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     border-radius: 15px;
+}
+
+input[type=submit]:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+input[type=submit]:active{
+    background-color: green;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
 }
 
 a{
     text-decoration: none;
     color: black;
 }
+
+.formulario{
+    float: right;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.fa:active{
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+}
+
+.logo-social{
+    height: 35em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+li a{
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 2px;
+    background-color: rgb(8, 8, 15);
+    color: white;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+  
+  #btn-mobile {
+    display: none;
+  }
+  
+@media(max-width: 1000px){
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 10px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+      }
+  
+      #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+      }
+  
+      #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(4, 3, 3, 0.05);
+      }
+  
+      #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+      }
+  
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+  
+      #hamburger::after,#hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+      }
+  
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+  
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+  
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+      }
+    }
+
+    @media(max-width: 260px){
+        #menu {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 70px;
+            right: 10px;
+            background: #e7e7e7;
+            transition: 0.6s;
+            z-index: 1000;
+            height: 0px;
+            visibility: hidden;
+            overflow-y: hidden;
+          }
+      
+          #nav.active #menu {
+            height: calc(100vh - 70px);
+            visibility: visible;
+            overflow-y: auto;
+          }
+      
+          #menu a {
+            padding: 1rem 0;
+            margin: 0 1rem;
+            border-bottom: 2px solid rgba(4, 3, 3, 0.05);
+            text-align: center;
+          }
+      
+          #btn-mobile {
+            display: flex;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            gap: 0.5rem;
+          }
+      
+          #hamburger {
+            border-top: 2px solid;
+            width: 20px;
+          }
+      
+          #hamburger::after,#hamburger::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: currentColor;
+            margin-top: 5px;
+            transition: 0.3s;
+            position: relative;
+          }
+      
+          #nav.active #hamburger {
+            border-top-color: transparent;
+          }
+      
+          #nav.active #hamburger::before {
+            transform: rotate(135deg);
+          }
+      
+          #nav.active #hamburger::after {
+            transform: rotate(-135deg);
+            top: -7px;
+          }
+
+          p{
+              visibility: hidden;
+          }
+          
+          #menu{
+              display: flex;
+              justify-items: auto;
+          }
+          .logo-social{
+              visibility: hidden;
+          }
+        }
+
+        @media(max-width: 560px){
+            #menu {
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 70px;
+                right: 10px;
+                background: #e7e7e7;
+                transition: 0.6s;
+                z-index: 1000;
+                height: 0px;
+                visibility: hidden;
+                overflow-y: hidden;
+              }
+          
+              #nav.active #menu {
+                height: calc(100vh - 70px);
+                visibility: visible;
+                overflow-y: auto;
+              }
+          
+              #menu a {
+                padding: 1rem 0;
+                margin: 0 1rem;
+                border-bottom: 2px solid rgba(4, 3, 3, 0.05);
+                text-align: center;
+              }
+          
+              #btn-mobile {
+                display: flex;
+                padding: 0.5rem 1rem;
+                font-size: 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: 0.5rem;
+              }
+          
+              #hamburger {
+                border-top: 2px solid;
+                width: 20px;
+              }
+          
+              #hamburger::after,#hamburger::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: currentColor;
+                margin-top: 5px;
+                transition: 0.3s;
+                position: relative;
+              }
+          
+              #nav.active #hamburger {
+                border-top-color: transparent;
+              }
+          
+              #nav.active #hamburger::before {
+                transform: rotate(135deg);
+              }
+          
+              #nav.active #hamburger::after {
+                transform: rotate(-135deg);
+                top: -7px;
+              }
+    
+              p{
+                  visibility: hidden;
+              }
+
+              #logo, #menu{
+                  justify-content: space-between;
+              }
+
+              .logo-social{
+                  visibility: hidden;
+              }
+            }
+
+
+
+
+/* 
+Spinosa: 
+
+Ryan: 
+*/

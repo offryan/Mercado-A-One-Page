@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <div id="menu" >
+    <header>
+         <div id="menu2" >
             <div id="logo">
                 <img src="./imagens/logoA.png"> 
                  <p>Supermercado A</p>
-                 <button id="button">
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg></button>
-               
-            </div>
-        </div>
-
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="#tst">Ofertas</a></li>
+        <li><a href="#tst2">Bebidas</a></li>
+        <li><a href="#tst3">Limpeza</a></li>
+        <li><a href="#tst4">Frutas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
         <style>
             #button{
                 width: 50px;
@@ -33,7 +40,6 @@
     </header>
     <main>
         <section id="tst"></section>
-
         <section id="nav2">
                 <div class="container">
                     <div class="ofertas">
@@ -44,16 +50,8 @@
                         <img src="./imagens/img1.png">
                         <hr>
                             <figcaption>
-                                <h2>Picanha</h2>
+                                <h2>Picanha Friboi tradicional</h2>
                                 <h2>R$: 59,99</h2>
-                            </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./imagens/img2.png">
-                        <hr>
-                            <figcaption>
-                                <h2>Fralda</h2>
-                                <h2>R$: 89,90</h2>
                             </figcaption>
                     </figure>
                     <figure>
@@ -68,16 +66,15 @@
                         <img src="./imagens/img4.png">
                         <hr>
                             <figcaption>
-                                <h2>Perna</h2>
+                                <h2>Paleta de cordeiro Do Chef congelada</h2>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
-
                     <figure>
                         <img src="./imagens/img5.png">
                         <hr>
                             <figcaption>
-                                <h2>Cupim</h2>
+                                <h2>Cupim Friboi</h2>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
@@ -85,7 +82,7 @@
                         <img src="./imagens/img6.png">
                         <hr>
                             <figcaption>
-                                <h3>Picanha Temperada</h3>
+                                <h3>Picanha suína Pamplona temperada resfriada</h3>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
@@ -93,7 +90,7 @@
                         <img src="./imagens/img7.png">
                         <hr>
                             <figcaption>
-                                <h3>Picanha Temperada</h3>
+                                <h3>Costela suína Perdigão a granel 1Kg</h3>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
@@ -101,7 +98,7 @@
                         <img src="./imagens/img8.png">
                         <hr>
                             <figcaption>
-                                <h3>Picanha Temperada</h3>
+                                <h3>Bisteca suína Sadia a granel 1Kg</h3>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
@@ -109,7 +106,7 @@
                         <img src="./imagens/img9.png">
                         <hr>
                             <figcaption>
-                                <h3>Picanha Temperada</h3>
+                                <h3>Coxinha da asa de frango a granel 1Kg</h3>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
@@ -117,7 +114,7 @@
                         <img src="./imagens/img10.png">
                         <hr>
                             <figcaption>
-                                <h3>Picanha Temperada</h3>
+                                <h3>Linguiça toscana Seara a granel 1Kg</h3>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
@@ -125,11 +122,12 @@
                         <img src="./imagens/img11.png">
                         <hr>
                             <figcaption>
-                                <h3>Picanha Temperada</h3>
+                                <h3>Linguiça calabresa defumada Seara a granel 1Kg</h3>
                                 <h2>R$: 109,99</h2>
                             </figcaption>
                     </figure>
                     </div>
+                <section id="tst2"></section>
                     <section id="bebidas">
                     <div class="ofertas">
                     <figcaption id="ofd">
@@ -212,7 +210,7 @@
                     </figure>
                 </div>
             </section>
-
+            <section id="tst3"></section>
                 <section id="limpeza">
                     <div class="ofertas">
                         <figcaption id="ofd">
@@ -260,7 +258,7 @@
                         </figure>
                     </section>
                     </div>
-               
+            <section id="tst4"></section>
                 <section id="frutas">
                     <div class="ofertas">
                         <figcaption id="ofd">
@@ -388,10 +386,152 @@
                     </div>
              </section>
         </section>
-    </main>
+        <section id="tst4"></section>
+        <section id="frutas">
+            <div class="ofertas">
+                <figcaption id="ofd">
+                <a href="url"> <h1>Frutas</h1></a>
+                </figcaption>
+                <figure>
+                    <img src="./imagens/img48.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Perna</h2>
+                            <h2>R$: 109,99</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img49.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Perna</h2>
+                            <h2>R$: 109,99</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img50.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Picanha</h2>
+                            <h2>R$: 59,99</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img51.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img52.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Contra-Filé</h2>
+                            <h2>R$: 109,99</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img53.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure> <figure>
+                    <img src="./imagens/img54.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img55.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img56.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img57.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img58.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img59.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img60.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img61.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                </figure>
+                <figure>
+                    <img src="./imagens/img62.png">
+                    <hr>
+                        <figcaption>
+                            <h2>Fralda</h2>
+                            <h2>R$: 89,90</h2>
+                        </figcaption>
+                      </figure>
+                  </div>
+            </section>
+        </section>
+</main>
     <footer>
+        
+<div id="boxes">
+             <div class="boxs">
+                 <h2></h2>
+             </div>
+             <ul>
+                 <li></li>
+             </ul>
+         </div>
+
+         
+         
+         
         <form class="formulario" method="post"> 
             
+
             <div class="field">
                 <label for="nome">Seu Nome:</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
@@ -416,8 +556,8 @@
                 <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
             </div>
     
-            <input type="submit" name="acao" value="Enviar">
-        </form>
-    </footer>
+    </footer> 
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
