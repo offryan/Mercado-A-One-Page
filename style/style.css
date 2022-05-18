@@ -190,6 +190,37 @@ footer h2{
 
 .formulario{
     width: 200px;
+    transform: translate(550%);
+}
+
+#boxes{
+    padding: 15px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#boxes ul li h2{
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+}
+
+div.boxes {
+    display: block;
+}
+
+div.sociais{
+    width: 700px;
+}
+
+.redes div{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .formulario p{
@@ -257,10 +288,6 @@ input[type=submit]:active{
 a{
     text-decoration: none;
     color: black;
-}
-
-.formulario{
-    float: right;
 }
 
 .fa {
