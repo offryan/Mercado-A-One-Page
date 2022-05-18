@@ -1,3 +1,7 @@
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 html{
     font-family: Verdana;
     -webkit-background-size: cover;
@@ -23,14 +27,17 @@ body{
 #esp{
     height: 10px;
     background-color: white;
+    background-image: url("#");
+    background: linear-gradient(#ffffff,#ffffff);
 }
 
 #menu2{
     width: 100%;
-    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 6px;
-    text-shadow: 2px 1px 7px rgb(0, 0, 0);
+    text-shadow: 2px 2px 9px rgb(0, 0, 0);
     position: fixed;
+    background-image: url("#");
+    background: linear-gradient(#dcf7f9,#ffffff);
 }
 
 #logo, p{
@@ -64,12 +71,13 @@ figure{
     border: 1.5px solid rgb(11, 5, 5);
     border-radius: 10px;
     width: 200px;
-    box-shadow: 1px 2px 3px;
+    box-shadow: 1px 2px 8px black;
     text-align: center;
     display: inline-block;
     margin: 10px;
     block-size: 300px;
     vertical-align: middle;
+
 }
 
 img{
@@ -90,9 +98,9 @@ footer{
     display: inline-block;
     max-width: 100%;
     min-height: 250px;
-    background-color: rgb(255, 255, 255);
     display: flex;
-}
+    background-image: url("#");
+    background: linear-gradient(#d6eced,#ffffff);}
 
 footer .boxes{
     width: 320px;
@@ -241,8 +249,8 @@ input[type=submit]:hover{
 }
 
 input[type=submit]:active{
-    background-color: green;
-    box-shadow: 0 5px #666;
+    background-color: rgb(152, 215, 220);
+    box-shadow: 0 5px rgb(105, 105, 105);
     transform: translateY(2px);
 }
 
