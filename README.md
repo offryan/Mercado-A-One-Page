@@ -1,3 +1,3 @@
-Primeira vez utilizando responsividade no CSS - 'Display: Flex'.
+Primeira vez utilizando responsividade no CSS
 
 Projeto da matéria Aplicações para Internet - Unicsul;
